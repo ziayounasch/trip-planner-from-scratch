@@ -66,29 +66,29 @@ class TripCrew:
 
 
 # This is the main function that you will use to run your custom crew.
-if __name__ == "__main__":
-    print("## Welcome to Trip Planner Crew")
-    print('-------------------------------')
-    origin = input(
-        dedent("""
-      From where will you be traveling from?
-    """))
-    cities = input(
-        dedent("""
-      What are the cities options you are interested in visiting?
-    """))
-    date_range = input(
-        dedent("""
-      What is the date range you are interested in traveling?
-    """))
-    interests = input(
-        dedent("""
-      What are some of your high level interests and hobbies?
-    """))
+# if __name__ == "__main__":
+#     print("## Welcome to Trip Planner Crew")
+#     print('-------------------------------')
+#     origin = input(
+#         dedent("""
+#       From where will you be traveling from?
+#     """))
+#     cities = input(
+#         dedent("""
+#       What are the cities options you are interested in visiting?
+#     """))
+#     date_range = input(
+#         dedent("""
+#       What is the date range you are interested in traveling?
+#     """))
+#     interests = input(
+#         dedent("""
+#       What are some of your high level interests and hobbies?
+#     """))
 
-    trip_crew = TripCrew(origin, cities, date_range, interests)
-    result = trip_crew.run()
-    print("\n\n########################")
-    print("## Here is you Trip Plan")
-    print("########################\n")
-    print(result)
+#     trip_crew = TripCrew(origin, cities, date_range, interests)
+#     result = trip_crew.run()
+#     print("\n\n########################")
+#     print("## Here is you Trip Plan")
+#     print("########################\n")
+#     print(result)
