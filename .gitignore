@@ -1,0 +1,9 @@
+#ignore this in github
+.DS_Store
+# environment variables
+.env
+tripplan
+tripscr
+
+#Cache folders
+__pycache__/
