@@ -53,7 +53,7 @@ class TravelAgents:
     def __init__(self): 
         # self.Ollama = Ollama(model="mistral")
         # self.groq = ChatGroq(temperature=0, groq_api_key=groq_api_key, model_name="llama3-8b-8192")
-        self.gemini = ChatGoogleGenerativeAI(model="gemini-1.5-flash", verbose=True, temperature=0.5, google_api_key=os.getenv("GOOGLE_API_KEY"))
+        self.gemini = ChatGoogleGenerativeAI(model="gemini-1.5-pro", verbose=True, temperature=0.5, google_api_key=os.getenv("GOOGLE_API_KEY"))
 
 
     def city_selection_expert(self):
