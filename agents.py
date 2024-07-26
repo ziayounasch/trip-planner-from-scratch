@@ -67,6 +67,7 @@ class TravelAgents:
             verbose=True,
             llm=self.gemini,
             max_iter=10,
+            max_rpm=50,
         )
 
     def local_tour_guide(self):
@@ -79,7 +80,8 @@ class TravelAgents:
             tools=[SearchTools.search_internet],
             verbose=True,
             llm=self.gemini,
-            max_iter=10, 
+            max_iter=10,
+            max_rpm=50,
             
         )
 
@@ -101,4 +103,5 @@ class TravelAgents:
             verbose=True,
             llm=self.gemini,
             max_iter=10,
+            max_rpm=50,
         )
