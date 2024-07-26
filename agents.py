@@ -65,7 +65,8 @@ class TravelAgents:
                 f"""Select the best cities based on weather, season, prices, and traveler interests"""),
             tools=[SearchTools.search_internet],
             verbose=True,
-            llm=self.gemini 
+            llm=self.gemini,
+            max_iter=10,
         )
 
     def local_tour_guide(self):
@@ -77,7 +78,8 @@ class TravelAgents:
                 f"""Provide the BEST insights about the selected city"""),
             tools=[SearchTools.search_internet],
             verbose=True,
-            llm=self.gemini 
+            llm=self.gemini,
+            max_iter=10, 
             
         )
 
@@ -97,5 +99,6 @@ class TravelAgents:
                 CalculatorTools.calculate
             ],
             verbose=True,
-            llm=self.gemini 
+            llm=self.gemini,
+            max_iter=10,
         )
