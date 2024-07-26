@@ -46,14 +46,14 @@ Key Steps for Task Creation:
 
 class TravelTasks:
     def __tip_section(self):
-        return "If you do your BEST WORK, I'll give you a $10,000 commission!"
+        return "If you do your BEST WORK, I'll give you a $100 commission!"
 
     def plan_itinerary(self, agent, city, travel_dates, interests):
         return Task(
             description=dedent(
                 f"""
-            **Task**: Develop a 7-Day Travel Itinerary
-            **Description**: Expand the city guide into a full 7-day travel itinerary with detailed 
+            **Task**: Develop a {travel_dates} Travel Itinerary
+            **Description**: Expand the city guide into a full {travel_dates} travel itinerary with detailed 
                 per-day plans, including weather forecasts, places to eat, packing suggestions, 
                 and a budget breakdown. You MUST suggest actual places to visit, actual hotels to stay, 
                 and actual restaurants to go to. This itinerary should cover all aspects of the trip, 
@@ -67,6 +67,7 @@ class TravelTasks:
             **Note**: {self.__tip_section()}
         """
             ),
+            expected_output="A complete travel plan, formatted as markdown, with a daily schedule and budget.",
             agent=agent,
         )
 
@@ -92,6 +93,7 @@ class TravelTasks:
                     **Note**: {self.__tip_section()}
         """
             ),
+            expected_output="A detailed report on the chosen city with flight costs, weather forecast, and attractions.",
             agent=agent,
         )
 
@@ -113,5 +115,6 @@ class TravelTasks:
                     **Note**: {self.__tip_section()}
         """
             ),
+            expected_output="A comprehensive city guide with cultural insights and practical tips.",
             agent=agent,
         )
